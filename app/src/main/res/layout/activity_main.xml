@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/mlast"
+            android:layout_width="171dp"
+            android:layout_height="57dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="221dp"
+            android:layout_marginTop="43dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:ems="10"
+            android:hint="LastName"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/mfirst"
+            android:layout_width="171dp"
+            android:layout_height="57dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="41dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:ems="10"
+            android:hint="FirstName"
+            android:inputType="textPersonName"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/mlast"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="295dp"
+            android:layout_marginEnd="139dp"
+            android:outlineAmbientShadowColor="@color/colorAccent"
+            android:background="@drawable/color"
+
+
+            android:text="pic Date Of Birth" />
+
+        <TextView
+            android:id="@+id/dateselect"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="219dp"
+            android:drawableLeft="@drawable/ic_today_black_24dp"
+            android:hint="select date"
+            android:padding="7dp"
+            android:textColorLink="@color/colorPrimaryDark"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="205dp"
+            android:layout_height="79dp"
+            android:layout_alignStart="@+id/button"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="368dp"
+            android:text="Register"
+            android:background="@drawable/color"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
